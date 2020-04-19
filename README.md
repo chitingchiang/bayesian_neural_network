@@ -1,1 +1,1 @@
-# bayesian_neural_network
+# Bayesian neural network
