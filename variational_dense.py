@@ -30,11 +30,6 @@ class VariationalLinear(nn.Module):
         W = self.W_mu+W_sigma*torch.randn(self.out_features, self.in_features)
         b = self.b_mu+b_sigma*torch.randn(self.out_features)
 
-        #norm_W = Normal(loc=self.W_mu, scale=W_sigma)
-        #norm_b = Normal(loc=self.b_mu, scale=b_sigma)
-
-        #param_log_prob = torch.sum(norm_W.log_prob(W))+torch.sum(norm_b.log_prob(b))
-
         return F.linear(X, W, b), (self.W_mu, W_sigma, W, self.b_mu, b_sigma, b)
 
     def extra_repr(self):
