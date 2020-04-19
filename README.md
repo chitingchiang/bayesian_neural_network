@@ -12,9 +12,8 @@ In our implementation, we assume that all parameters follow
 Gaussian distributions, so that each of them can be parametrized
 by the mean and standard deviation. Since the standard deviation
 has to be positive, we try three different parametrizations:
-(1) <img src="https://latex.codecogs.com/gif.latex?\sigma_p={\rm softplus}(\sigma_\rho) " /> 
-(2) <img src="https://latex.codecogs.com/gif.latex?\sigma_p=\exp(\sigma_\rho) " />
-(3) <img src="https://latex.codecogs.com/gif.latex?\sigma_p=|\sigma_\rho| " />
+(1) sigma_p = softplus(sigma_rho); (2) sigma_p = exp(sigma_rho);
+(3) sigma_p = |sigma_rho|.
 
 
 In [the first notebook](linear_regression.ipynb), we train the
